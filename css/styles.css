@@ -150,7 +150,8 @@ img {
 
 /* Hero */
 .background {
-  background-image: url(../images/hero.jpg);
+  width: 1600px;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
