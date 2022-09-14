@@ -6,6 +6,8 @@
   --sub-txt-color: #757575;
   --icon-fill: #afb1b8;
   --footer-icon: #43444d;
+  --normal-duration: 250ms;
+  --normal-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -561,8 +563,37 @@ img {
 
 .portfolio__cards-link:hover,
 .portfolio__cards-link:focus {
+
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.tap {
+  position: relative;
+  overflow: hidden;
+
+}
+
+.description {
+  position: absolute;
+  transform: translateY(100%);
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--background-text-color);
+  padding: 63px 24px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transition-property: transform;
+  transition-duration: var(--normal-duration);
+  transition-timing-function: var(--normal-timing-function);
+}
+
+.portfolio__cards-link:hover .description {
+  transform: translateY(0);
 }
 
 .portfolio__content {
