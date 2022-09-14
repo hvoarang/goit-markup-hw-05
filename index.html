@@ -67,7 +67,9 @@
       <section class="section background">
         <div class="background__content container">
           <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="btn">Замовити послугу</button>
+          <button class="btn" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <section class="prof section">
@@ -440,7 +442,19 @@
       </div>
     </footer>
 
-    <!-- sripts -->
-    <script rel="stylesheet" href="./js/modal.js"></script>
+    <!-- Всплывающее окно -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" data-modal-close>
+          <svg class="close-modal" height="11" width="11">
+            <use href="./images/icons.svg#phone"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- подключение js -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
