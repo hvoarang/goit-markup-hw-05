@@ -151,7 +151,7 @@ img {
   border-radius: 2px;
   opacity: 1;
   transform: scaleX(0);
-  transition: transform 250ms var(--normal-timing-function)
+  transition: transform var(--normal-duration) var(--normal-timing-function)
 }
 
 .menu__link:hover::after,
@@ -336,7 +336,7 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: background-color 250ms var(--normal-timing-function), fill 250ms var(--normal-timing-function);
+  transition: background-color var(--normal-duration) var(--normal-timing-function), fill var(--normal-duration) var(--normal-timing-function);
 
 }
 
@@ -357,7 +357,7 @@ img {
 
 .social__icon {
   fill: var(--icon-fill);
-  transition: 250ms var(--normal-timing-function);
+  transition: var(--normal-duration) var(--normal-timing-function);
 }
 
 .team__name {
