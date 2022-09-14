@@ -22,7 +22,6 @@ h4,
 h5,
 h6,
 p {
-
   margin: 0;
 }
 
@@ -80,7 +79,6 @@ img {
 }
 
 .nav {
-
   margin-left: 93px;
 }
 
@@ -116,7 +114,6 @@ img {
   gap: 50px;
 }
 
-
 .menu__link {
   position: relative;
   color: inherit;
@@ -131,7 +128,6 @@ img {
 .menu__link:focus {
   color: var(--primary-color);
 }
-
 
 .menu__link.active {
   color: var(--primary-color);
@@ -151,12 +147,12 @@ img {
   border-radius: 2px;
   opacity: 1;
   transform: scaleX(0);
-  transition: transform var(--normal-duration) var(--normal-timing-function)
+  transition: transform var(--normal-duration) var(--normal-timing-function);
 }
 
 .menu__link:hover::after,
 .menu__link:focus::after,
-.active .menu__link::after {
+.menu__link.active::after {
   transform: scaleX(1);
 }
 
@@ -165,13 +161,13 @@ img {
   justify-content: center;
   align-items: center;
   color: var(--sub-txt-color);
-  transition: color 0.25s ease-in-out;
+  transition: var(--normal-timing-function);
 }
 
 .header__icon {
   margin-right: 10px;
   fill: var(--sub-txt-color);
-  transition: fill 0.25s ease-in-out;
+  transition: var(--normal-timing-function);
 }
 
 .contacts__link:hover,
@@ -191,7 +187,9 @@ img {
   background-position: center;
   background-color: #c4c4c4;
   padding: 200px 0;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
 }
 
 .title {
@@ -221,11 +219,12 @@ img {
   line-height: 1.88;
   cursor: pointer;
   letter-spacing: 0.06em;
+  transition: background-color var(--normal-duration) var(--normal-timing-function);
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: #188CE8;
+  background-color: #188ce8;
 }
 
 .prof__service {
@@ -276,7 +275,6 @@ img {
 .prof__description-blok {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   position: relative;
-
 }
 
 .prof__description {
@@ -336,10 +334,9 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: background-color var(--normal-duration) var(--normal-timing-function), fill var(--normal-duration) var(--normal-timing-function);
-
+  transition: background-color var(--normal-duration) var(--normal-timing-function),
+    fill var(--normal-duration) var(--normal-timing-function);
 }
-
 
 .social__item:not(:last-child) {
   margin-right: 10px;
@@ -394,7 +391,7 @@ img {
   cursor: pointer;
   border: 1px solid var(--icon-fill);
   border-radius: 4px;
-  transition: border 0.25s ease-in-out;
+  transition: var(--normal-timing-function);
 }
 
 .clients__item:hover {
@@ -403,7 +400,7 @@ img {
 
 .clients__icon {
   fill: var(--icon-fill);
-  transition: fill 0.25s ease-in-out;
+  transition: fill var(--normal-timing-function);
 }
 
 .clients__item:hover .clients__icon {
@@ -431,8 +428,6 @@ img {
   margin-right: 70px;
 }
 
-
-
 .home-logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -450,14 +445,14 @@ img {
   letter-spacing: 0.03em;
   color: #ffffff;
   margin-bottom: 5px;
-  transition: color 0.25s ease-in-out;
+  transition: var(--normal-timing-function);
 }
 
 .address {
   margin-top: 20px;
 }
 
-.address__item:not(:last-child) {
+.footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -521,7 +516,8 @@ img {
   border-radius: 4px;
   padding: 6px 22px;
   cursor: pointer;
-  transition: color 0.25s, background-color 0.3s, box-shadow 0.3s ease-in-out;
+  transition: color 0.25s, background-color 0.3s,
+    box-shadow var(--normal-timing-function);
 }
 
 .btn__portfolio-link:hover,
@@ -557,12 +553,11 @@ img {
 .portfolio__cards-link {
   display: block;
   color: inherit;
-  transition: box-shadow 0.25s ease-in-out;
+  transition: box-shadow var(--normal-timing-function);
 }
 
 .portfolio__cards-link:hover,
 .portfolio__cards-link:focus {
-
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -570,7 +565,6 @@ img {
 .tap {
   position: relative;
   overflow: hidden;
-
 }
 
 .description {
@@ -616,7 +610,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2)
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .backdrop.is-hidden {
@@ -633,9 +627,9 @@ img {
   height: 581px;
   width: 528px;
   background-color: var(--background-text-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-
 }
 
 .modal-btn {
